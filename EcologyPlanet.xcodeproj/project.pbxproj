@@ -98,6 +98,10 @@
 		E0AEF9C425674FEB006AE9D2 /* LeftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9C225674FEB006AE9D2 /* LeftVC.swift */; };
 		E0AEF9C825674FF9006AE9D2 /* RightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9C725674FF9006AE9D2 /* RightVC.swift */; };
 		E0AEF9C925674FF9006AE9D2 /* RightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9C725674FF9006AE9D2 /* RightVC.swift */; };
+		E0AEFA102567AEA1006AE9D2 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEFA0F2567AEA1006AE9D2 /* TestVC.swift */; };
+		E0AEFA112567AEA1006AE9D2 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEFA0F2567AEA1006AE9D2 /* TestVC.swift */; };
+		E0AEFA152567AF7B006AE9D2 /* NormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEFA142567AF7B006AE9D2 /* NormalVC.swift */; };
+		E0AEFA162567AF7B006AE9D2 /* NormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEFA142567AF7B006AE9D2 /* NormalVC.swift */; };
 		E0E4860B25662146009CE25C /* EPTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E4860A25662146009CE25C /* EPTableView.swift */; };
 		E0E4860C25662146009CE25C /* EPTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E4860A25662146009CE25C /* EPTableView.swift */; };
 		E0E48621256637CD009CE25C /* EPScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E48620256637CD009CE25C /* EPScrollView.swift */; };
@@ -160,6 +164,8 @@
 		E0AEF9BD25674EF6006AE9D2 /* ZhalieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhalieVC.swift; sourceTree = "<group>"; };
 		E0AEF9C225674FEB006AE9D2 /* LeftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftVC.swift; sourceTree = "<group>"; };
 		E0AEF9C725674FF9006AE9D2 /* RightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightVC.swift; sourceTree = "<group>"; };
+		E0AEFA0F2567AEA1006AE9D2 /* TestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		E0AEFA142567AF7B006AE9D2 /* NormalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalVC.swift; sourceTree = "<group>"; };
 		E0E4860A25662146009CE25C /* EPTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPTableView.swift; sourceTree = "<group>"; };
 		E0E48620256637CD009CE25C /* EPScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -357,10 +363,12 @@
 				E07BAE84255E372000DE5D6C /* SUOYIN.swift */,
 				E07BAE82255E372000DE5D6C /* SwitchiView.swift */,
 				E07BAE83255E372000DE5D6C /* ThirdVC.swift */,
+				E0AEFA142567AF7B006AE9D2 /* NormalVC.swift */,
 				E067520B25652570000A2F5C /* PageViewVC.swift */,
 				E0AEF9BD25674EF6006AE9D2 /* ZhalieVC.swift */,
 				E0AEF9C225674FEB006AE9D2 /* LeftVC.swift */,
 				E0AEF9C725674FF9006AE9D2 /* RightVC.swift */,
+				E0AEFA0F2567AEA1006AE9D2 /* TestVC.swift */,
 				E07BAE7D255E372000DE5D6C /* UserCell.swift */,
 				E06A5CA52563629F0091E95A /* timg.jpeg */,
 				E06A5CAA2563648B0091E95A /* 111.png */,
@@ -569,6 +577,7 @@
 				E06EA402256264A500D78D6D /* EPLog.swift in Sources */,
 				E06A5D282563CF0C0091E95A /* EPUserInfo.swift in Sources */,
 				E06EA403256264A500D78D6D /* BaseViewController.swift in Sources */,
+				E0AEFA112567AEA1006AE9D2 /* TestVC.swift in Sources */,
 				E06EA404256264A500D78D6D /* EPMoyaConfig.swift in Sources */,
 				E067520125651AF6000A2F5C /* EPPageTitleView.swift in Sources */,
 				E06EA405256264A500D78D6D /* FiveVC.swift in Sources */,
@@ -593,6 +602,7 @@
 				E06EA412256264A500D78D6D /* AppDelegate.swift in Sources */,
 				E06EA413256264A500D78D6D /* BaseNavBarViewController.swift in Sources */,
 				E06751ED2564D10D000A2F5C /* EPAlertTool.swift in Sources */,
+				E0AEFA162567AF7B006AE9D2 /* NormalVC.swift in Sources */,
 				E067520625651B27000A2F5C /* EPPageStyle.swift in Sources */,
 				E06EA414256264A500D78D6D /* MyInputView.swift in Sources */,
 				E06751E12564C053000A2F5C /* EPAlert.swift in Sources */,
@@ -616,6 +626,7 @@
 				E06EA3F8256257FD00D78D6D /* EPLog.swift in Sources */,
 				E06A5D272563CF0C0091E95A /* EPUserInfo.swift in Sources */,
 				E07BAE72255E365D00DE5D6C /* BaseViewController.swift in Sources */,
+				E0AEFA102567AEA1006AE9D2 /* TestVC.swift in Sources */,
 				E06EA3CC25624C0500D78D6D /* EPMoyaConfig.swift in Sources */,
 				E067520025651AF6000A2F5C /* EPPageTitleView.swift in Sources */,
 				E07BAE85255E372000DE5D6C /* FiveVC.swift in Sources */,
@@ -640,6 +651,7 @@
 				E07BAE57255E361000DE5D6C /* AppDelegate.swift in Sources */,
 				E07BAE73255E365D00DE5D6C /* BaseNavBarViewController.swift in Sources */,
 				E06751EC2564D10D000A2F5C /* EPAlertTool.swift in Sources */,
+				E0AEFA152567AF7B006AE9D2 /* NormalVC.swift in Sources */,
 				E067520525651B27000A2F5C /* EPPageStyle.swift in Sources */,
 				E07BAE8B255E372000DE5D6C /* MyInputView.swift in Sources */,
 				E06751E02564C053000A2F5C /* EPAlert.swift in Sources */,

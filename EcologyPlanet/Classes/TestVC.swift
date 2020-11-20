@@ -1,5 +1,5 @@
 //
-//  LeftVC.swift
+//  TestVC.swift
 //  EcologyPlanet
 //
 //  Created by dzc on 2020/11/20.
@@ -7,15 +7,14 @@
 
 import UIKit
 
-class LeftVC: BaseViewController ,UITableViewDataSource, UITableViewDelegate{
-
+class TestVC: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 40
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "III")
-        cell?.textLabel?.text = "大所发生的地球人个人个人"
+        cell?.textLabel?.text = "xxxxx"
         return cell ?? UITableViewCell()
     }
     
@@ -27,17 +26,7 @@ class LeftVC: BaseViewController ,UITableViewDataSource, UITableViewDelegate{
         tab.register(UITableViewCell.self, forCellReuseIdentifier: "III")
         tab.sectionIndexBackgroundColor = .clear
         tab.sectionIndexColor = .gray
-        tab.mj_header = EPRefresh.instance.ep_refreshHeaderHandler(tabView: tab, callBack: {
-            Dlog(item: "asdfasdfsadfasdfasd")
-            sleep(2)
-            tab.mj_header?.endRefreshing()
-        })
-        tab.mj_footer = EPRefresh.instance.ep_refreshFooterHandler(tabView: tab, callBack: {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                tab.mj_footer?.endRefreshing()
-            }
-        })
-        self.kTableView = tab
+    
         return tab
     }()
     override func viewDidLoad() {
@@ -49,17 +38,6 @@ class LeftVC: BaseViewController ,UITableViewDataSource, UITableViewDelegate{
         super.viewWillAppear(animated)
         print("rightvc--viewwillappear")
     }
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if (scrollView == tabView) {
-            if (!self.scrollEnabled) {
-                scrollView.contentOffset = .zero;
-            }
-            if (scrollView.contentOffset.y <= 0) {
-                self.scrollEnabled = false;
-                scrollView.contentOffset = CGPoint(x: 0, y: scrollView.contentOffset.y)
-                NotificationCenter.default.post(name: Notification.Name("leaveTop"), object: nil)
-            }
-        }
-    }
-
+   
+    
 }

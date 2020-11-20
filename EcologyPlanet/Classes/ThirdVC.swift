@@ -16,7 +16,7 @@ class ThirdVC: BaseViewController {
         button.setTitle("基本用法", for: .normal)
         button.addTarget(self, action: #selector(clickBtn(bt:)), for: .touchUpInside)
         button.setTitleColor(.red, for: .normal)
-        button.tag = 100
+        button.tag = 10
         return button
         
     }()
@@ -53,6 +53,10 @@ class ThirdVC: BaseViewController {
         switch bt.tag {
         case 100:
             let page = PageViewVC()
+            page.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(page, animated: true)
+        case 10:
+            let page = NormalVC()
             page.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(page, animated: true)
         default:

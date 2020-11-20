@@ -15,8 +15,8 @@ class FiveVC: BaseViewController {
 
         view.backgroundColor = .white
         let titles: Array<String> = ["闲聊","学友录"]
-        let leftVC = LeftViewController.init()
-        let rightVC = RightViewController.init()
+        let leftVC = TestVC.init()
+        let rightVC = TestVC.init()
         for obj in children {
             obj.removeFromParent()
         }
