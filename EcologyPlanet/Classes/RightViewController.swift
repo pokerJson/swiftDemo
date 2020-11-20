@@ -28,7 +28,6 @@ class RightViewController: BaseViewController, UITableViewDelegate, UITableViewD
         tab.sectionIndexBackgroundColor = .clear
         tab.sectionIndexColor = .gray
     
-//        self.kTableView = tab
         return tab
     }()
     override func viewDidLoad() {

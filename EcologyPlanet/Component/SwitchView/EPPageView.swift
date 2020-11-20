@@ -52,7 +52,8 @@ class EPPageView: UIView {
          titles: [String],
          childControllers: [UIViewController],
          parentController: UIViewController,
-         style: EPPageStyle = EPPageStyle()){
+         style: EPPageStyle = EPPageStyle(),
+         currentIndex: Int = 0){
         
         super.init(frame: frame)
         
@@ -63,6 +64,11 @@ class EPPageView: UIView {
         
         //初始化UI
         setupUI()
+        //根据传进来的currentIndex确定
+        let indexPath = IndexPath(row: currentIndex, section: 0)
+        collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
+        pageTitleView.pageViewScrollEnd(pageIndex: currentIndex)
+
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -56,7 +56,6 @@ class LeftViewController: BaseViewController {
                 tab.mj_footer?.endRefreshing()
             }
         })
-//        self.kTableView = tab
         return tab
     }()
     
@@ -188,45 +187,6 @@ extension LeftViewController: UITableViewDelegate,UITableViewDataSource {
             }
         }
     }
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        print("leftvd------===\(scrollView.contentOffset.y)")
-//        if scrollView.contentOffset.y > 0 {
-//            if self.scrollEnabled {
-//                NotificationCenter.default.post(name: Notification.Name("mainScrollViewCanScroll"), object: nil)
-//            }
-//            if (scrollView == tabView) {
-//                if (!self.scrollEnabled) {
-//                    scrollView.contentOffset = .zero;
-//                }
-//                if (scrollView.contentOffset.y <= 0) {
-//                    self.scrollEnabled = true;
-//                    scrollView.contentOffset = .zero;
-//                    NotificationCenter.default.post(name: Notification.Name("leaveTop"), object: nil)
-//                }
-//            }
-//        }else{
-//
-//            self.scrollEnabled = false;
-//            if !self.mainCanScrol {
-//                if self.initSelf {
-//                    scrollView.bounces = false;
-//                }else{
-////                    scrollView.bounces = true;
-//
-//                }
-//
-//            }else{
-//                scrollView.bounces = false
-//            }
-////            NotificationCenter.default.post(name: Notification.Name("mainScrollViewCanScroll"), object: nil)
-//
-////            scrollView.contentOffset = .zero;
-////            NotificationCenter.default.post(name: Notification.Name("leaveTop"), object: nil)
-//
-//
-//        }
-//
-//    }
 }
 
 class UserInfo {

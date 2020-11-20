@@ -20,7 +20,8 @@ class NormalVC: BaseViewController {
         let pageView = EPPageView(frame: CGRect(x: 0, y: 88, width: SCREEN_WIDTH, height: SCREENT_HEIGHT-88),
                                   titles: ["推是荐","关方法注","视发到频","蓝鸟"],
                                   childControllers: [TestVC(),TestVC(),TestVC(),TestVC()],
-                                  parentController: self,style: style)
+                                  parentController: self,style: style,
+                                  currentIndex: 1)
         view.addSubview(pageView)
         
     }
