@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EPAlert" customModule="EcologyPlanet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mH7-hJ-Yme">
+                    <rect key="frame" x="0.0" y="10" width="300" height="140"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="温馨地方" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQJ-MF-4AP">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="uVr-Qr-Xw4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vpu-Cu-h2p">
+                            <rect key="frame" x="0.0" y="40" width="300" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿士大夫撒地方撒地方撒旦法撒旦法撒旦法是发撒地方撒地方撒地方撒旦法撒旦法撒旦法" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8N6-KV-YsN">
+                                    <rect key="frame" x="15" y="4" width="270" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="8N6-KV-YsN" firstAttribute="leading" secondItem="vpu-Cu-h2p" secondAttribute="leading" constant="15" id="NSW-Jr-pz6"/>
+                                <constraint firstItem="8N6-KV-YsN" firstAttribute="top" secondItem="vpu-Cu-h2p" secondAttribute="top" constant="4" id="mxI-GV-a9s"/>
+                                <constraint firstAttribute="trailing" secondItem="8N6-KV-YsN" secondAttribute="trailing" constant="15" id="spy-K8-p2M"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwI-8B-y8Y">
+                            <rect key="frame" x="0.0" y="100" width="300" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtt-kQ-Jmf">
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Oor-ab-jwO"/>
+                                        <constraint firstAttribute="width" constant="150" id="S1b-E2-om2"/>
+                                    </constraints>
+                                    <state key="normal" title="取消">
+                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLs-H6-vbp">
+                                    <rect key="frame" x="150" y="0.0" width="150" height="40"/>
+                                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="aFt-JI-Ip4"/>
+                                        <constraint firstAttribute="height" constant="40" id="gUa-cN-gfz"/>
+                                    </constraints>
+                                    <state key="normal" title="确定">
+                                        <color key="titleColor" systemColor="systemOrangeColor"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="eOU-Vb-1wh"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mH7-hJ-Yme" secondAttribute="bottom" constant="10" id="CWr-Zi-zk2"/>
+                <constraint firstItem="mH7-hJ-Yme" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Gel-Jm-J9U"/>
+                <constraint firstItem="mH7-hJ-Yme" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="O6b-fC-lRc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnStacView" destination="cwI-8B-y8Y" id="1QV-V5-lhb"/>
+                <outlet property="cancelBtn" destination="Vtt-kQ-Jmf" id="VUu-4I-bU6"/>
+                <outlet property="contentTitle" destination="8N6-KV-YsN" id="5td-pC-7FJ"/>
+                <outlet property="okBtn" destination="wLs-H6-vbp" id="6zV-HB-gll"/>
+                <outlet property="title" destination="kQJ-MF-4AP" id="tRP-3M-drX"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="68"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

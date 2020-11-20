@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02DCA04FA731313D7D3E129A /* Pods_EcologyPlanet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0235118E4AB7A4386E82815 /* Pods_EcologyPlanet.framework */; };
+		3E1E129CBCB8D91487142E5A /* Pods_EcologyPlanet_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B2374995388D3589A642BA5 /* Pods_EcologyPlanet_Dev.framework */; };
+		D124A3B30A54A1BA83A047D9 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		E06751E02564C053000A2F5C /* EPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06751DF2564C053000A2F5C /* EPAlert.swift */; };
+		E06751E12564C053000A2F5C /* EPAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06751DF2564C053000A2F5C /* EPAlert.swift */; };
+		E06751E72564C33E000A2F5C /* EPAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06751E62564C33E000A2F5C /* EPAlert.xib */; };
+		E06751E82564C33E000A2F5C /* EPAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = E06751E62564C33E000A2F5C /* EPAlert.xib */; };
+		E06751EC2564D10D000A2F5C /* EPAlertTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06751EB2564D10D000A2F5C /* EPAlertTool.swift */; };
+		E06751ED2564D10D000A2F5C /* EPAlertTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06751EB2564D10D000A2F5C /* EPAlertTool.swift */; };
+		E06751FB25651AB7000A2F5C /* EPPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06751FA25651AB7000A2F5C /* EPPageView.swift */; };
+		E06751FC25651AB7000A2F5C /* EPPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06751FA25651AB7000A2F5C /* EPPageView.swift */; };
+		E067520025651AF6000A2F5C /* EPPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06751FF25651AF6000A2F5C /* EPPageTitleView.swift */; };
+		E067520125651AF6000A2F5C /* EPPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06751FF25651AF6000A2F5C /* EPPageTitleView.swift */; };
+		E067520525651B27000A2F5C /* EPPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E067520425651B27000A2F5C /* EPPageStyle.swift */; };
+		E067520625651B27000A2F5C /* EPPageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E067520425651B27000A2F5C /* EPPageStyle.swift */; };
+		E067520C25652570000A2F5C /* PageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E067520B25652570000A2F5C /* PageViewVC.swift */; };
+		E067520D25652570000A2F5C /* PageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E067520B25652570000A2F5C /* PageViewVC.swift */; };
+		E06A5CA62563629F0091E95A /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E06A5CA52563629F0091E95A /* timg.jpeg */; };
+		E06A5CA72563629F0091E95A /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E06A5CA52563629F0091E95A /* timg.jpeg */; };
+		E06A5CAB2563648B0091E95A /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = E06A5CAA2563648B0091E95A /* 111.png */; };
+		E06A5CAC2563648B0091E95A /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = E06A5CAA2563648B0091E95A /* 111.png */; };
+		E06A5D272563CF0C0091E95A /* EPUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06A5D262563CF0C0091E95A /* EPUserInfo.swift */; };
+		E06A5D282563CF0C0091E95A /* EPUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06A5D262563CF0C0091E95A /* EPUserInfo.swift */; };
+		E06A5D312563E9070091E95A /* EPCommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06A5D302563E9070091E95A /* EPCommonClass.swift */; };
+		E06A5D322563E9070091E95A /* EPCommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06A5D302563E9070091E95A /* EPCommonClass.swift */; };
+		E06EA3CB25624C0500D78D6D /* EPHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA3C925624C0500D78D6D /* EPHttpRequest.swift */; };
+		E06EA3CC25624C0500D78D6D /* EPMoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA3CA25624C0500D78D6D /* EPMoyaConfig.swift */; };
+		E06EA3CF25624C1900D78D6D /* EPAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA3CE25624C1900D78D6D /* EPAPI.swift */; };
+		E06EA3DD25624C9B00D78D6D /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA3DC25624C9B00D78D6D /* HUD.swift */; };
+		E06EA3F8256257FD00D78D6D /* EPLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA3F7256257FD00D78D6D /* EPLog.swift */; };
+		E06EA3FD256264A500D78D6D /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE83255E372000DE5D6C /* ThirdVC.swift */; };
+		E06EA3FE256264A500D78D6D /* EPHttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA3C925624C0500D78D6D /* EPHttpRequest.swift */; };
+		E06EA3FF256264A500D78D6D /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE80255E372000DE5D6C /* FourthVC.swift */; };
+		E06EA400256264A500D78D6D /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE81255E372000DE5D6C /* RightViewController.swift */; };
+		E06EA401256264A500D78D6D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE6F255E365D00DE5D6C /* MainViewController.swift */; };
+		E06EA402256264A500D78D6D /* EPLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA3F7256257FD00D78D6D /* EPLog.swift */; };
+		E06EA403256264A500D78D6D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE6D255E365D00DE5D6C /* BaseViewController.swift */; };
+		E06EA404256264A500D78D6D /* EPMoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA3CA25624C0500D78D6D /* EPMoyaConfig.swift */; };
+		E06EA405256264A500D78D6D /* FiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE79255E372000DE5D6C /* FiveVC.swift */; };
+		E06EA406256264A500D78D6D /* CallBackHandles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE6C255E365D00DE5D6C /* CallBackHandles.swift */; };
+		E06EA407256264A500D78D6D /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7A255E372000DE5D6C /* SecondVC.swift */; };
+		E06EA408256264A500D78D6D /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7C255E372000DE5D6C /* LeftViewController.swift */; };
+		E06EA409256264A500D78D6D /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7B255E372000DE5D6C /* DetailVC.swift */; };
+		E06EA40A256264A500D78D6D /* SwitchiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE82255E372000DE5D6C /* SwitchiView.swift */; };
+		E06EA40B256264A500D78D6D /* SingleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE70255E365D00DE5D6C /* SingleManager.swift */; };
+		E06EA40C256264A500D78D6D /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA3DC25624C9B00D78D6D /* HUD.swift */; };
+		E06EA40D256264A500D78D6D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7D255E372000DE5D6C /* UserCell.swift */; };
+		E06EA40E256264A500D78D6D /* EPAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA3CE25624C1900D78D6D /* EPAPI.swift */; };
+		E06EA40F256264A500D78D6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE5A255E361000DE5D6C /* ViewController.swift */; };
+		E06EA410256264A500D78D6D /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7E255E372000DE5D6C /* FirstVC.swift */; };
+		E06EA411256264A500D78D6D /* SUOYIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE84255E372000DE5D6C /* SUOYIN.swift */; };
+		E06EA412256264A500D78D6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE56255E361000DE5D6C /* AppDelegate.swift */; };
+		E06EA413256264A500D78D6D /* BaseNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE6E255E365D00DE5D6C /* BaseNavBarViewController.swift */; };
+		E06EA414256264A500D78D6D /* MyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7F255E372000DE5D6C /* MyInputView.swift */; };
+		E06EA418256264A500D78D6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BAE61255E361300DE5D6C /* LaunchScreen.storyboard */; };
+		E06EA419256264A500D78D6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E07BAE5F255E361300DE5D6C /* Assets.xcassets */; };
+		E06EA41A256264A500D78D6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BAE5C255E361100DE5D6C /* Main.storyboard */; };
+		E06EA4502562830B00D78D6D /* EPRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA44F2562830B00D78D6D /* EPRefresh.swift */; };
+		E06EA4512562830B00D78D6D /* EPRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA44F2562830B00D78D6D /* EPRefresh.swift */; };
+		E06EA45825628A2800D78D6D /* EPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA45725628A2800D78D6D /* EPColor.swift */; };
+		E06EA45925628A2800D78D6D /* EPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA45725628A2800D78D6D /* EPColor.swift */; };
+		E06EA45D25628C3100D78D6D /* EPFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA45C25628C3100D78D6D /* EPFont.swift */; };
+		E06EA45E25628C3100D78D6D /* EPFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06EA45C25628C3100D78D6D /* EPFont.swift */; };
+		E07BAE57255E361000DE5D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE56255E361000DE5D6C /* AppDelegate.swift */; };
+		E07BAE5B255E361000DE5D6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE5A255E361000DE5D6C /* ViewController.swift */; };
+		E07BAE5E255E361100DE5D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BAE5C255E361100DE5D6C /* Main.storyboard */; };
+		E07BAE60255E361300DE5D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E07BAE5F255E361300DE5D6C /* Assets.xcassets */; };
+		E07BAE63255E361300DE5D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BAE61255E361300DE5D6C /* LaunchScreen.storyboard */; };
+		E07BAE71255E365D00DE5D6C /* CallBackHandles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE6C255E365D00DE5D6C /* CallBackHandles.swift */; };
+		E07BAE72255E365D00DE5D6C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE6D255E365D00DE5D6C /* BaseViewController.swift */; };
+		E07BAE73255E365D00DE5D6C /* BaseNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE6E255E365D00DE5D6C /* BaseNavBarViewController.swift */; };
+		E07BAE74255E365D00DE5D6C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE6F255E365D00DE5D6C /* MainViewController.swift */; };
+		E07BAE75255E365D00DE5D6C /* SingleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE70255E365D00DE5D6C /* SingleManager.swift */; };
+		E07BAE85255E372000DE5D6C /* FiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE79255E372000DE5D6C /* FiveVC.swift */; };
+		E07BAE86255E372000DE5D6C /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7A255E372000DE5D6C /* SecondVC.swift */; };
+		E07BAE87255E372000DE5D6C /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7B255E372000DE5D6C /* DetailVC.swift */; };
+		E07BAE88255E372000DE5D6C /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7C255E372000DE5D6C /* LeftViewController.swift */; };
+		E07BAE89255E372000DE5D6C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7D255E372000DE5D6C /* UserCell.swift */; };
+		E07BAE8A255E372000DE5D6C /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7E255E372000DE5D6C /* FirstVC.swift */; };
+		E07BAE8B255E372000DE5D6C /* MyInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE7F255E372000DE5D6C /* MyInputView.swift */; };
+		E07BAE8C255E372000DE5D6C /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE80255E372000DE5D6C /* FourthVC.swift */; };
+		E07BAE8D255E372000DE5D6C /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE81255E372000DE5D6C /* RightViewController.swift */; };
+		E07BAE8E255E372000DE5D6C /* SwitchiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE82255E372000DE5D6C /* SwitchiView.swift */; };
+		E07BAE8F255E372000DE5D6C /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE83255E372000DE5D6C /* ThirdVC.swift */; };
+		E07BAE90255E372000DE5D6C /* SUOYIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE84255E372000DE5D6C /* SUOYIN.swift */; };
+		E0AEF9BE25674EF6006AE9D2 /* ZhalieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9BD25674EF6006AE9D2 /* ZhalieVC.swift */; };
+		E0AEF9BF25674EF6006AE9D2 /* ZhalieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9BD25674EF6006AE9D2 /* ZhalieVC.swift */; };
+		E0AEF9C325674FEB006AE9D2 /* LeftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9C225674FEB006AE9D2 /* LeftVC.swift */; };
+		E0AEF9C425674FEB006AE9D2 /* LeftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9C225674FEB006AE9D2 /* LeftVC.swift */; };
+		E0AEF9C825674FF9006AE9D2 /* RightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9C725674FF9006AE9D2 /* RightVC.swift */; };
+		E0AEF9C925674FF9006AE9D2 /* RightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9C725674FF9006AE9D2 /* RightVC.swift */; };
+		E0E4860B25662146009CE25C /* EPTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E4860A25662146009CE25C /* EPTableView.swift */; };
+		E0E4860C25662146009CE25C /* EPTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E4860A25662146009CE25C /* EPTableView.swift */; };
+		E0E48621256637CD009CE25C /* EPScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E48620256637CD009CE25C /* EPScrollView.swift */; };
+		E0E48622256637CD009CE25C /* EPScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E48620256637CD009CE25C /* EPScrollView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0121BB34465A4BB2F9EEB6D1 /* Pods-EcologyPlanet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcologyPlanet.release.xcconfig"; path = "Target Support Files/Pods-EcologyPlanet/Pods-EcologyPlanet.release.xcconfig"; sourceTree = "<group>"; };
+		0FE211577F326DA1C3C85D84 /* Pods-EcologyPlanet Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcologyPlanet Dev.debug.xcconfig"; path = "Target Support Files/Pods-EcologyPlanet Dev/Pods-EcologyPlanet Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		3B2374995388D3589A642BA5 /* Pods_EcologyPlanet_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcologyPlanet_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D470E50A09CD8363BD05D1 /* Pods-EcologyPlanet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcologyPlanet.debug.xcconfig"; path = "Target Support Files/Pods-EcologyPlanet/Pods-EcologyPlanet.debug.xcconfig"; sourceTree = "<group>"; };
+		A345FF207140896916ACAADF /* Pods-EcologyPlanet Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcologyPlanet Dev.release.xcconfig"; path = "Target Support Files/Pods-EcologyPlanet Dev/Pods-EcologyPlanet Dev.release.xcconfig"; sourceTree = "<group>"; };
+		E0235118E4AB7A4386E82815 /* Pods_EcologyPlanet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcologyPlanet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06751DF2564C053000A2F5C /* EPAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPAlert.swift; sourceTree = "<group>"; };
+		E06751E62564C33E000A2F5C /* EPAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EPAlert.xib; sourceTree = "<group>"; };
+		E06751EB2564D10D000A2F5C /* EPAlertTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPAlertTool.swift; sourceTree = "<group>"; };
+		E06751FA25651AB7000A2F5C /* EPPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPPageView.swift; sourceTree = "<group>"; };
+		E06751FF25651AF6000A2F5C /* EPPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPPageTitleView.swift; sourceTree = "<group>"; };
+		E067520425651B27000A2F5C /* EPPageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPPageStyle.swift; sourceTree = "<group>"; };
+		E067520B25652570000A2F5C /* PageViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewVC.swift; sourceTree = "<group>"; };
+		E06A5CA52563629F0091E95A /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		E06A5CAA2563648B0091E95A /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
+		E06A5CEC2563B6380091E95A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E06A5D262563CF0C0091E95A /* EPUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPUserInfo.swift; sourceTree = "<group>"; };
+		E06A5D302563E9070091E95A /* EPCommonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPCommonClass.swift; sourceTree = "<group>"; };
+		E06EA3C925624C0500D78D6D /* EPHttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPHttpRequest.swift; sourceTree = "<group>"; };
+		E06EA3CA25624C0500D78D6D /* EPMoyaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPMoyaConfig.swift; sourceTree = "<group>"; };
+		E06EA3CE25624C1900D78D6D /* EPAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPAPI.swift; sourceTree = "<group>"; };
+		E06EA3DC25624C9B00D78D6D /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		E06EA3F7256257FD00D78D6D /* EPLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPLog.swift; sourceTree = "<group>"; };
+		E06EA41F256264A500D78D6D /* EcologyPlanet Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EcologyPlanet Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06EA420256264A600D78D6D /* EcologyPlanet Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "EcologyPlanet Dev-Info.plist"; path = "/Users/phjtytj-0003/Documents/EcologyPlanet/EcologyPlanet/EcologyPlanet Dev-Info.plist"; sourceTree = "<absolute>"; };
+		E06EA44F2562830B00D78D6D /* EPRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRefresh.swift; sourceTree = "<group>"; };
+		E06EA45725628A2800D78D6D /* EPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPColor.swift; sourceTree = "<group>"; };
+		E06EA45C25628C3100D78D6D /* EPFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPFont.swift; sourceTree = "<group>"; };
+		E07BAE53255E361000DE5D6C /* EcologyPlanet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcologyPlanet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E07BAE56255E361000DE5D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E07BAE5A255E361000DE5D6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E07BAE5D255E361100DE5D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E07BAE5F255E361300DE5D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E07BAE62255E361300DE5D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E07BAE64255E361300DE5D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E07BAE6C255E365D00DE5D6C /* CallBackHandles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallBackHandles.swift; sourceTree = "<group>"; };
+		E07BAE6D255E365D00DE5D6C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E07BAE6E255E365D00DE5D6C /* BaseNavBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavBarViewController.swift; sourceTree = "<group>"; };
+		E07BAE6F255E365D00DE5D6C /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E07BAE70255E365D00DE5D6C /* SingleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleManager.swift; sourceTree = "<group>"; };
+		E07BAE79255E372000DE5D6C /* FiveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveVC.swift; sourceTree = "<group>"; };
+		E07BAE7A255E372000DE5D6C /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		E07BAE7B255E372000DE5D6C /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		E07BAE7C255E372000DE5D6C /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		E07BAE7D255E372000DE5D6C /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		E07BAE7E255E372000DE5D6C /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		E07BAE7F255E372000DE5D6C /* MyInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyInputView.swift; sourceTree = "<group>"; };
+		E07BAE80255E372000DE5D6C /* FourthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
+		E07BAE81255E372000DE5D6C /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		E07BAE82255E372000DE5D6C /* SwitchiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchiView.swift; sourceTree = "<group>"; };
+		E07BAE83255E372000DE5D6C /* ThirdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		E07BAE84255E372000DE5D6C /* SUOYIN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUOYIN.swift; sourceTree = "<group>"; };
+		E0AEF9BD25674EF6006AE9D2 /* ZhalieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhalieVC.swift; sourceTree = "<group>"; };
+		E0AEF9C225674FEB006AE9D2 /* LeftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftVC.swift; sourceTree = "<group>"; };
+		E0AEF9C725674FF9006AE9D2 /* RightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightVC.swift; sourceTree = "<group>"; };
+		E0E4860A25662146009CE25C /* EPTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPTableView.swift; sourceTree = "<group>"; };
+		E0E48620256637CD009CE25C /* EPScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPScrollView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E06EA415256264A500D78D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1E129CBCB8D91487142E5A /* Pods_EcologyPlanet_Dev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07BAE50255E361000DE5D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D124A3B30A54A1BA83A047D9 /* (null) in Frameworks */,
+				02DCA04FA731313D7D3E129A /* Pods_EcologyPlanet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F3F1AF5D261762F7743B9F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81D470E50A09CD8363BD05D1 /* Pods-EcologyPlanet.debug.xcconfig */,
+				0121BB34465A4BB2F9EEB6D1 /* Pods-EcologyPlanet.release.xcconfig */,
+				0FE211577F326DA1C3C85D84 /* Pods-EcologyPlanet Dev.debug.xcconfig */,
+				A345FF207140896916ACAADF /* Pods-EcologyPlanet Dev.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D60404B14CB1B3FF7EC9BEC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E06A5CEC2563B6380091E95A /* SystemConfiguration.framework */,
+				3B2374995388D3589A642BA5 /* Pods_EcologyPlanet_Dev.framework */,
+				E0235118E4AB7A4386E82815 /* Pods_EcologyPlanet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E06751DE2564C039000A2F5C /* EPAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				E06751DF2564C053000A2F5C /* EPAlert.swift */,
+				E06751E62564C33E000A2F5C /* EPAlert.xib */,
+				E06751EB2564D10D000A2F5C /* EPAlertTool.swift */,
+			);
+			path = EPAlertView;
+			sourceTree = "<group>";
+		};
+		E06751F725651A1A000A2F5C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E06751F825651A32000A2F5C /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				E06751F925651A53000A2F5C /* SwitchView */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		E06751F925651A53000A2F5C /* SwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				E06751FA25651AB7000A2F5C /* EPPageView.swift */,
+				E06751FF25651AF6000A2F5C /* EPPageTitleView.swift */,
+				E067520425651B27000A2F5C /* EPPageStyle.swift */,
+			);
+			path = SwitchView;
+			sourceTree = "<group>";
+		};
+		E06A5D252563CEF20091E95A /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E06A5D262563CF0C0091E95A /* EPUserInfo.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		E06EA3B825624A5B00D78D6D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E06751F725651A1A000A2F5C /* New Group */,
+				E06751DE2564C039000A2F5C /* EPAlertView */,
+				E06A5D252563CEF20091E95A /* UserInfo */,
+				E06EA44E256282C600D78D6D /* Refresh */,
+				E06EA3C825624BDA00D78D6D /* HttpRequest */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		E06EA3C825624BDA00D78D6D /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				E06EA3CE25624C1900D78D6D /* EPAPI.swift */,
+				E06EA3C925624C0500D78D6D /* EPHttpRequest.swift */,
+				E06EA3CA25624C0500D78D6D /* EPMoyaConfig.swift */,
+				E06EA3DC25624C9B00D78D6D /* HUD.swift */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		E06EA44E256282C600D78D6D /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				E06EA44F2562830B00D78D6D /* EPRefresh.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		E06EA45625628A1100D78D6D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E06A5D302563E9070091E95A /* EPCommonClass.swift */,
+				E06EA45725628A2800D78D6D /* EPColor.swift */,
+				E06EA45C25628C3100D78D6D /* EPFont.swift */,
+				E06EA3F7256257FD00D78D6D /* EPLog.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E07BAE4A255E361000DE5D6C = {
+			isa = PBXGroup;
+			children = (
+				E07BAE55255E361000DE5D6C /* EcologyPlanet */,
+				E07BAE54255E361000DE5D6C /* Products */,
+				9F3F1AF5D261762F7743B9F0 /* Pods */,
+				D60404B14CB1B3FF7EC9BEC9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E07BAE54255E361000DE5D6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E07BAE53255E361000DE5D6C /* EcologyPlanet.app */,
+				E06EA41F256264A500D78D6D /* EcologyPlanet Dev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E07BAE55255E361000DE5D6C /* EcologyPlanet */ = {
+			isa = PBXGroup;
+			children = (
+				E07BAE6B255E364100DE5D6C /* Base */,
+				E06EA45625628A1100D78D6D /* Common */,
+				E06EA3B825624A5B00D78D6D /* Tools */,
+				E06751F825651A32000A2F5C /* Component */,
+				E07BAE78255E370400DE5D6C /* Classes */,
+				E07BAE56255E361000DE5D6C /* AppDelegate.swift */,
+				E07BAE5A255E361000DE5D6C /* ViewController.swift */,
+				E07BAE5C255E361100DE5D6C /* Main.storyboard */,
+				E07BAE5F255E361300DE5D6C /* Assets.xcassets */,
+				E07BAE61255E361300DE5D6C /* LaunchScreen.storyboard */,
+				E07BAE64255E361300DE5D6C /* Info.plist */,
+				E06EA420256264A600D78D6D /* EcologyPlanet Dev-Info.plist */,
+			);
+			path = EcologyPlanet;
+			sourceTree = "<group>";
+		};
+		E07BAE6B255E364100DE5D6C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E07BAE6E255E365D00DE5D6C /* BaseNavBarViewController.swift */,
+				E07BAE6D255E365D00DE5D6C /* BaseViewController.swift */,
+				E07BAE6C255E365D00DE5D6C /* CallBackHandles.swift */,
+				E07BAE6F255E365D00DE5D6C /* MainViewController.swift */,
+				E07BAE70255E365D00DE5D6C /* SingleManager.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E07BAE78255E370400DE5D6C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E07BAE7B255E372000DE5D6C /* DetailVC.swift */,
+				E07BAE7E255E372000DE5D6C /* FirstVC.swift */,
+				E07BAE79255E372000DE5D6C /* FiveVC.swift */,
+				E07BAE80255E372000DE5D6C /* FourthVC.swift */,
+				E07BAE7C255E372000DE5D6C /* LeftViewController.swift */,
+				E0E4860A25662146009CE25C /* EPTableView.swift */,
+				E0E48620256637CD009CE25C /* EPScrollView.swift */,
+				E07BAE7F255E372000DE5D6C /* MyInputView.swift */,
+				E07BAE81255E372000DE5D6C /* RightViewController.swift */,
+				E07BAE7A255E372000DE5D6C /* SecondVC.swift */,
+				E07BAE84255E372000DE5D6C /* SUOYIN.swift */,
+				E07BAE82255E372000DE5D6C /* SwitchiView.swift */,
+				E07BAE83255E372000DE5D6C /* ThirdVC.swift */,
+				E067520B25652570000A2F5C /* PageViewVC.swift */,
+				E0AEF9BD25674EF6006AE9D2 /* ZhalieVC.swift */,
+				E0AEF9C225674FEB006AE9D2 /* LeftVC.swift */,
+				E0AEF9C725674FF9006AE9D2 /* RightVC.swift */,
+				E07BAE7D255E372000DE5D6C /* UserCell.swift */,
+				E06A5CA52563629F0091E95A /* timg.jpeg */,
+				E06A5CAA2563648B0091E95A /* 111.png */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E06EA3FA256264A500D78D6D /* EcologyPlanet Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E06EA41C256264A500D78D6D /* Build configuration list for PBXNativeTarget "EcologyPlanet Dev" */;
+			buildPhases = (
+				E06EA3FB256264A500D78D6D /* [CP] Check Pods Manifest.lock */,
+				E06EA3FC256264A500D78D6D /* Sources */,
+				E06EA415256264A500D78D6D /* Frameworks */,
+				E06EA417256264A500D78D6D /* Resources */,
+				E06EA41B256264A500D78D6D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EcologyPlanet Dev";
+			productName = EcologyPlanet;
+			productReference = E06EA41F256264A500D78D6D /* EcologyPlanet Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E07BAE52255E361000DE5D6C /* EcologyPlanet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E07BAE67255E361300DE5D6C /* Build configuration list for PBXNativeTarget "EcologyPlanet" */;
+			buildPhases = (
+				802BBACFABC2ED6C8B29B142 /* [CP] Check Pods Manifest.lock */,
+				E07BAE4F255E361000DE5D6C /* Sources */,
+				E07BAE50255E361000DE5D6C /* Frameworks */,
+				E07BAE51255E361000DE5D6C /* Resources */,
+				E37D60F73A5CA2017B492CFD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EcologyPlanet;
+			productName = EcologyPlanet;
+			productReference = E07BAE53255E361000DE5D6C /* EcologyPlanet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E07BAE4B255E361000DE5D6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					E07BAE52255E361000DE5D6C = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = E07BAE4E255E361000DE5D6C /* Build configuration list for PBXProject "EcologyPlanet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E07BAE4A255E361000DE5D6C;
+			productRefGroup = E07BAE54255E361000DE5D6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E07BAE52255E361000DE5D6C /* EcologyPlanet */,
+				E06EA3FA256264A500D78D6D /* EcologyPlanet Dev */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E06EA417256264A500D78D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06EA418256264A500D78D6D /* LaunchScreen.storyboard in Resources */,
+				E06EA419256264A500D78D6D /* Assets.xcassets in Resources */,
+				E06A5CA72563629F0091E95A /* timg.jpeg in Resources */,
+				E06A5CAC2563648B0091E95A /* 111.png in Resources */,
+				E06EA41A256264A500D78D6D /* Main.storyboard in Resources */,
+				E06751E82564C33E000A2F5C /* EPAlert.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07BAE51255E361000DE5D6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07BAE63255E361300DE5D6C /* LaunchScreen.storyboard in Resources */,
+				E07BAE60255E361300DE5D6C /* Assets.xcassets in Resources */,
+				E06A5CA62563629F0091E95A /* timg.jpeg in Resources */,
+				E06A5CAB2563648B0091E95A /* 111.png in Resources */,
+				E07BAE5E255E361100DE5D6C /* Main.storyboard in Resources */,
+				E06751E72564C33E000A2F5C /* EPAlert.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		802BBACFABC2ED6C8B29B142 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcologyPlanet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E06EA3FB256264A500D78D6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EcologyPlanet Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E06EA41B256264A500D78D6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcologyPlanet Dev/Pods-EcologyPlanet Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcologyPlanet Dev/Pods-EcologyPlanet Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcologyPlanet Dev/Pods-EcologyPlanet Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E37D60F73A5CA2017B492CFD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcologyPlanet/Pods-EcologyPlanet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EcologyPlanet/Pods-EcologyPlanet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EcologyPlanet/Pods-EcologyPlanet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E06EA3FC256264A500D78D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06EA3FD256264A500D78D6D /* ThirdVC.swift in Sources */,
+				E06EA3FE256264A500D78D6D /* EPHttpRequest.swift in Sources */,
+				E06EA4512562830B00D78D6D /* EPRefresh.swift in Sources */,
+				E0E48622256637CD009CE25C /* EPScrollView.swift in Sources */,
+				E06EA3FF256264A500D78D6D /* FourthVC.swift in Sources */,
+				E06EA400256264A500D78D6D /* RightViewController.swift in Sources */,
+				E0E4860C25662146009CE25C /* EPTableView.swift in Sources */,
+				E0AEF9C925674FF9006AE9D2 /* RightVC.swift in Sources */,
+				E06EA401256264A500D78D6D /* MainViewController.swift in Sources */,
+				E06EA402256264A500D78D6D /* EPLog.swift in Sources */,
+				E06A5D282563CF0C0091E95A /* EPUserInfo.swift in Sources */,
+				E06EA403256264A500D78D6D /* BaseViewController.swift in Sources */,
+				E06EA404256264A500D78D6D /* EPMoyaConfig.swift in Sources */,
+				E067520125651AF6000A2F5C /* EPPageTitleView.swift in Sources */,
+				E06EA405256264A500D78D6D /* FiveVC.swift in Sources */,
+				E06EA406256264A500D78D6D /* CallBackHandles.swift in Sources */,
+				E06EA407256264A500D78D6D /* SecondVC.swift in Sources */,
+				E06EA408256264A500D78D6D /* LeftViewController.swift in Sources */,
+				E06A5D322563E9070091E95A /* EPCommonClass.swift in Sources */,
+				E067520D25652570000A2F5C /* PageViewVC.swift in Sources */,
+				E06EA409256264A500D78D6D /* DetailVC.swift in Sources */,
+				E06EA45E25628C3100D78D6D /* EPFont.swift in Sources */,
+				E06EA45925628A2800D78D6D /* EPColor.swift in Sources */,
+				E06EA40A256264A500D78D6D /* SwitchiView.swift in Sources */,
+				E06EA40B256264A500D78D6D /* SingleManager.swift in Sources */,
+				E0AEF9C425674FEB006AE9D2 /* LeftVC.swift in Sources */,
+				E06EA40C256264A500D78D6D /* HUD.swift in Sources */,
+				E06EA40D256264A500D78D6D /* UserCell.swift in Sources */,
+				E06EA40E256264A500D78D6D /* EPAPI.swift in Sources */,
+				E06EA40F256264A500D78D6D /* ViewController.swift in Sources */,
+				E06751FC25651AB7000A2F5C /* EPPageView.swift in Sources */,
+				E06EA410256264A500D78D6D /* FirstVC.swift in Sources */,
+				E06EA411256264A500D78D6D /* SUOYIN.swift in Sources */,
+				E06EA412256264A500D78D6D /* AppDelegate.swift in Sources */,
+				E06EA413256264A500D78D6D /* BaseNavBarViewController.swift in Sources */,
+				E06751ED2564D10D000A2F5C /* EPAlertTool.swift in Sources */,
+				E067520625651B27000A2F5C /* EPPageStyle.swift in Sources */,
+				E06EA414256264A500D78D6D /* MyInputView.swift in Sources */,
+				E06751E12564C053000A2F5C /* EPAlert.swift in Sources */,
+				E0AEF9BF25674EF6006AE9D2 /* ZhalieVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E07BAE4F255E361000DE5D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07BAE8F255E372000DE5D6C /* ThirdVC.swift in Sources */,
+				E06EA3CB25624C0500D78D6D /* EPHttpRequest.swift in Sources */,
+				E06EA4502562830B00D78D6D /* EPRefresh.swift in Sources */,
+				E0E48621256637CD009CE25C /* EPScrollView.swift in Sources */,
+				E07BAE8C255E372000DE5D6C /* FourthVC.swift in Sources */,
+				E07BAE8D255E372000DE5D6C /* RightViewController.swift in Sources */,
+				E0E4860B25662146009CE25C /* EPTableView.swift in Sources */,
+				E0AEF9C825674FF9006AE9D2 /* RightVC.swift in Sources */,
+				E07BAE74255E365D00DE5D6C /* MainViewController.swift in Sources */,
+				E06EA3F8256257FD00D78D6D /* EPLog.swift in Sources */,
+				E06A5D272563CF0C0091E95A /* EPUserInfo.swift in Sources */,
+				E07BAE72255E365D00DE5D6C /* BaseViewController.swift in Sources */,
+				E06EA3CC25624C0500D78D6D /* EPMoyaConfig.swift in Sources */,
+				E067520025651AF6000A2F5C /* EPPageTitleView.swift in Sources */,
+				E07BAE85255E372000DE5D6C /* FiveVC.swift in Sources */,
+				E07BAE71255E365D00DE5D6C /* CallBackHandles.swift in Sources */,
+				E07BAE86255E372000DE5D6C /* SecondVC.swift in Sources */,
+				E07BAE88255E372000DE5D6C /* LeftViewController.swift in Sources */,
+				E06A5D312563E9070091E95A /* EPCommonClass.swift in Sources */,
+				E067520C25652570000A2F5C /* PageViewVC.swift in Sources */,
+				E07BAE87255E372000DE5D6C /* DetailVC.swift in Sources */,
+				E06EA45D25628C3100D78D6D /* EPFont.swift in Sources */,
+				E06EA45825628A2800D78D6D /* EPColor.swift in Sources */,
+				E07BAE8E255E372000DE5D6C /* SwitchiView.swift in Sources */,
+				E07BAE75255E365D00DE5D6C /* SingleManager.swift in Sources */,
+				E0AEF9C325674FEB006AE9D2 /* LeftVC.swift in Sources */,
+				E06EA3DD25624C9B00D78D6D /* HUD.swift in Sources */,
+				E07BAE89255E372000DE5D6C /* UserCell.swift in Sources */,
+				E06EA3CF25624C1900D78D6D /* EPAPI.swift in Sources */,
+				E07BAE5B255E361000DE5D6C /* ViewController.swift in Sources */,
+				E06751FB25651AB7000A2F5C /* EPPageView.swift in Sources */,
+				E07BAE8A255E372000DE5D6C /* FirstVC.swift in Sources */,
+				E07BAE90255E372000DE5D6C /* SUOYIN.swift in Sources */,
+				E07BAE57255E361000DE5D6C /* AppDelegate.swift in Sources */,
+				E07BAE73255E365D00DE5D6C /* BaseNavBarViewController.swift in Sources */,
+				E06751EC2564D10D000A2F5C /* EPAlertTool.swift in Sources */,
+				E067520525651B27000A2F5C /* EPPageStyle.swift in Sources */,
+				E07BAE8B255E372000DE5D6C /* MyInputView.swift in Sources */,
+				E06751E02564C053000A2F5C /* EPAlert.swift in Sources */,
+				E0AEF9BE25674EF6006AE9D2 /* ZhalieVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E07BAE5C255E361100DE5D6C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E07BAE5D255E361100DE5D6C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E07BAE61255E361300DE5D6C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E07BAE62255E361300DE5D6C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E06EA41D256264A500D78D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FE211577F326DA1C3C85D84 /* Pods-EcologyPlanet Dev.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 994Q9W5Y47;
+				INFOPLIST_FILE = "EcologyPlanet Dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.peogoo.DiscipleGroupDG.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = peogoo.dev;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E06EA41E256264A500D78D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A345FF207140896916ACAADF /* Pods-EcologyPlanet Dev.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "EcologyPlanet Dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E07BAE65255E361300DE5D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E07BAE66255E361300DE5D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E07BAE68255E361300DE5D6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D470E50A09CD8363BD05D1 /* Pods-EcologyPlanet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = EcologyPlanet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.phjt.ecoplanet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E07BAE69255E361300DE5D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0121BB34465A4BB2F9EEB6D1 /* Pods-EcologyPlanet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = EcologyPlanet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.phjt.ecoplanet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E06EA41C256264A500D78D6D /* Build configuration list for PBXNativeTarget "EcologyPlanet Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E06EA41D256264A500D78D6D /* Debug */,
+				E06EA41E256264A500D78D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E07BAE4E255E361000DE5D6C /* Build configuration list for PBXProject "EcologyPlanet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E07BAE65255E361300DE5D6C /* Debug */,
+				E07BAE66255E361300DE5D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E07BAE67255E361300DE5D6C /* Build configuration list for PBXNativeTarget "EcologyPlanet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E07BAE68255E361300DE5D6C /* Debug */,
+				E07BAE69255E361300DE5D6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E07BAE4B255E361000DE5D6C /* Project object */;
+}

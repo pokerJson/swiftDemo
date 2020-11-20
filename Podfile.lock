@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (5.4.0)
+  - HandyJSON (5.0.2)
+  - Kingfisher (5.15.7):
+    - Kingfisher/Core (= 5.15.7)
+  - Kingfisher/Core (5.15.7)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.5.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Reachability (3.2)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - HandyJSON (~> 5.0.2)
+  - Kingfisher
+  - MBProgressHUD
+  - MJRefresh
+  - Moya
+  - Reachability
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - HandyJSON
+    - Kingfisher
+    - MBProgressHUD
+    - MJRefresh
+    - Moya
+    - Reachability
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Kingfisher: 6e1a13523fcb1c86924ce53affe4ac957e544d59
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 70d8d87d5d689265a9a49d3802dd304d3e060b58
+
+COCOAPODS: 1.9.1
