@@ -12,8 +12,18 @@ class ThirdVC: BaseViewController {
 
     lazy var btn: UIButton = {
         let button = UIButton.init(type: .custom)
+        button.frame = CGRect(x: 100, y: 100, width: 100, height: 40)
+        button.setTitle("基本用法", for: .normal)
+        button.addTarget(self, action: #selector(clickBtn(bt:)), for: .touchUpInside)
+        button.setTitleColor(.red, for: .normal)
+        button.tag = 100
+        return button
+        
+    }()
+    lazy var btn1: UIButton = {
+        let button = UIButton.init(type: .custom)
         button.frame = CGRect(x: 100, y: 200, width: 100, height: 40)
-        button.setTitle("常规用法", for: .normal)
+        button.setTitle("联动用法", for: .normal)
         button.addTarget(self, action: #selector(clickBtn(bt:)), for: .touchUpInside)
         button.setTitleColor(.red, for: .normal)
         button.tag = 100
@@ -34,6 +44,7 @@ class ThirdVC: BaseViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         view.addSubview(btn)
+        view.addSubview(btn1)
         view.addSubview(btn2)
     }
     
