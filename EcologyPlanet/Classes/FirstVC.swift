@@ -64,7 +64,7 @@ class FirstVC: BaseViewController {
         view.addSubview(uiimagev)
         view.addSubview(btn3)
 //        uiimagev.kf.setImage(with: URL(string: "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"))
-        uiimagev.setUrl("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg")
+        uiimagev.setUrl("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg",placeHolder: "xxx")
 ////        Dlog(item: "ss t")
         HttpRequest.requestHandyJson(target: EPAPI.upLoadImage(img: UIImage(named: "111")!)) { (data) in
             Dlog(item: String(data: data, encoding: .utf8))

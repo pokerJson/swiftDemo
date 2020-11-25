@@ -46,8 +46,9 @@ extension NSObject {
 
 //图片加载
 extension UIImageView {
-    func setUrl(_ url: String) {
-        self.kf.setImage(with: URL(string: url))
+    func setUrl(_ url: String,placeHolder: String) {
+//        self.kf.setImage(with: URL(string: url))
+        self.kf.setImage(with: URL(string: url), placeholder: UIImage(named: placeHolder))
     }
 }
 //MARK:- UIView 常用frame方法分类

@@ -39,5 +39,8 @@ class TestVC: BaseViewController, UITableViewDelegate, UITableViewDataSource {
         print("rightvc--viewwillappear")
     }
    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let letf = LeftViewController()
+        self.navigationController?.pushViewController(letf, animated: true)
+    }
 }

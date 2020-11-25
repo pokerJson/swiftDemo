@@ -25,7 +25,7 @@ class ZhalieVC: BaseViewController {
     }()
     var vcs = [LeftVC(),RightVC()]
     lazy var pageView: EPPageView = {
-        let result = EPPageView(frame: CGRect(x: 0, y: headerHeight, width: SCREEN_WIDTH, height: SCREENT_HEIGHT-kTABBARH), titles: ["推是荐","视发到频"], childControllers: vcs, parentController: self, style: self.style)
+        let result = EPPageView(frame: CGRect(x: 0, y: headerHeight, width: SCREEN_WIDTH, height: SCREENT_HEIGHT-kTABBARH), titles: ["推是荐","视发到频"], childControllers: children, parentController: self, style: self.style)
         return result
     }()
     lazy var sccccc: EPScrollView = {
@@ -44,6 +44,9 @@ class ZhalieVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.scrollEnabled = true
+        vcs.forEach { (vc) in
+            addChild(vc)
+        }
         view.addSubview(sccccc)
         NotificationCenter.default.addObserver(self, selector: #selector(scrollStatusMethod), name: Notification.Name("leaveTop"), object: nil)
         
