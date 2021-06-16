@@ -58,6 +58,8 @@ class ZhalieVC: BaseViewController {
 extension ZhalieVC:UIScrollViewDelegate {
     
         func scrollViewDidScroll(_ scrollView: UIScrollView) {
+            print("asdfasdfasdfasdfasfsdf")
+
             if scrollView == sccccc {
                 let vel: CGPoint = scrollView.panGestureRecognizer.velocity(in: scrollView)
                 if vel.y < -5 {

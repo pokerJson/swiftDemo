@@ -54,6 +54,9 @@ class FirstVC: BaseViewController {
         label.frame = CGRect(x: 100, y: 200, width: 300, height: 300)
         return label
     }()
+    private var list = [liveModel]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .gray
@@ -66,19 +69,46 @@ class FirstVC: BaseViewController {
 //        uiimagev.kf.setImage(with: URL(string: "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg"))
         uiimagev.setUrl("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3363295869,2467511306&fm=26&gp=0.jpg",placeHolder: "xxx")
 ////        Dlog(item: "ss t")
-        HttpRequest.requestHandyJson(target: EPAPI.upLoadImage(img: UIImage(named: "111")!)) { (data) in
-            Dlog(item: String(data: data, encoding: .utf8))
-        } failure: { (_, _) in
-
-        }
+//        HttpRequest.requestHandyJson(target: EPAPI.upLoadImage(img: UIImage(named: "111")!)) { (data) in
+//            Dlog(item: String(data: data, encoding: .utf8))
+//        } failure: { (_, _) in
+//
+//        }
         HttpRequest.requestHandyJson(target: EPAPI.rankList(10, 1, 1)) { (data) in
-            Dlog(item: String(data: data, encoding: .utf8))
-//            self.model3 = LiveHJModel.deserialize(from: String(data: model, encoding: .utf8))
+            let model = Hasfdfasd.deserialize(from: String(data: data, encoding: .utf8))
+            print(model?.data?.list?.first?.liveId)
 
         } failure: { (_, _) in
 
         }
+        HttpRequest.requestHandyJson2222(target: EPAPI.rankList(10, 1, 1), model: Hasfdfasd.self) {[weak self] model in
+            guard let self =  self else {return}
+            print(model?.data?.list?.first?.liveId)
+
+        } failure: { code, msg in
+            
+        }
+
+
+
+        HttpRequest.requestCodable(target: EPAPI.rankList(10, 1, 1)) { [weak self] model in
+            guard let self =  self else {return}
+            let model22 = model?.toModel(modelType: LiveListModel.self)
+            
+            print(model22!.data.list.first?.liveId)
+        } failure: { code, msg in
+            
+        }
+
     
+        HttpRequest.requestCodeable222(target: EPAPI.rankList(10, 1, 1), model: LiveListModel.self) {[weak self] model in
+            guard let self =  self else {return}
+            self.list = model.data.list
+            print(self.list.first?.liveId ?? "")
+        } failure: { code, msg in
+            
+        }
+
        
 
 

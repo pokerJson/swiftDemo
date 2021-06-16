@@ -92,6 +92,14 @@
 		E07BAE8E255E372000DE5D6C /* SwitchiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE82255E372000DE5D6C /* SwitchiView.swift */; };
 		E07BAE8F255E372000DE5D6C /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE83255E372000DE5D6C /* ThirdVC.swift */; };
 		E07BAE90255E372000DE5D6C /* SUOYIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BAE84255E372000DE5D6C /* SUOYIN.swift */; };
+		E07BC89126789FD10024816C /* liveListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC89026789FD10024816C /* liveListModel.swift */; };
+		E07BC89226789FD10024816C /* liveListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC89026789FD10024816C /* liveListModel.swift */; };
+		E07BC8942678AF980024816C /* JSONKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC8932678AF980024816C /* JSONKit.swift */; };
+		E07BC8952678AF980024816C /* JSONKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC8932678AF980024816C /* JSONKit.swift */; };
+		E07BC89A2678BA800024816C /* CleanJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC8992678BA800024816C /* CleanJSON.swift */; };
+		E07BC89B2678BA800024816C /* CleanJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC8992678BA800024816C /* CleanJSON.swift */; };
+		E07BC89D2678BD830024816C /* LiveHanleJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC89C2678BD830024816C /* LiveHanleJsonModel.swift */; };
+		E07BC89E2678BD830024816C /* LiveHanleJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC89C2678BD830024816C /* LiveHanleJsonModel.swift */; };
 		E0AEF9BE25674EF6006AE9D2 /* ZhalieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9BD25674EF6006AE9D2 /* ZhalieVC.swift */; };
 		E0AEF9BF25674EF6006AE9D2 /* ZhalieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9BD25674EF6006AE9D2 /* ZhalieVC.swift */; };
 		E0AEF9C325674FEB006AE9D2 /* LeftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AEF9C225674FEB006AE9D2 /* LeftVC.swift */; };
@@ -163,6 +171,10 @@
 		E07BAE82255E372000DE5D6C /* SwitchiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchiView.swift; sourceTree = "<group>"; };
 		E07BAE83255E372000DE5D6C /* ThirdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 		E07BAE84255E372000DE5D6C /* SUOYIN.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SUOYIN.swift; sourceTree = "<group>"; };
+		E07BC89026789FD10024816C /* liveListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liveListModel.swift; sourceTree = "<group>"; };
+		E07BC8932678AF980024816C /* JSONKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONKit.swift; sourceTree = "<group>"; };
+		E07BC8992678BA800024816C /* CleanJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanJSON.swift; sourceTree = "<group>"; };
+		E07BC89C2678BD830024816C /* LiveHanleJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveHanleJsonModel.swift; sourceTree = "<group>"; };
 		E0AEF9BD25674EF6006AE9D2 /* ZhalieVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZhalieVC.swift; sourceTree = "<group>"; };
 		E0AEF9C225674FEB006AE9D2 /* LeftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftVC.swift; sourceTree = "<group>"; };
 		E0AEF9C725674FF9006AE9D2 /* RightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightVC.swift; sourceTree = "<group>"; };
@@ -277,6 +289,8 @@
 				E06EA3C925624C0500D78D6D /* EPHttpRequest.swift */,
 				E06EA3CA25624C0500D78D6D /* EPMoyaConfig.swift */,
 				E06EA3DC25624C9B00D78D6D /* HUD.swift */,
+				E07BC8932678AF980024816C /* JSONKit.swift */,
+				E07BC8992678BA800024816C /* CleanJSON.swift */,
 			);
 			path = HttpRequest;
 			sourceTree = "<group>";
@@ -357,6 +371,8 @@
 			isa = PBXGroup;
 			children = (
 				E07BAE7E255E372000DE5D6C /* FirstVC.swift */,
+				E07BC89026789FD10024816C /* liveListModel.swift */,
+				E07BC89C2678BD830024816C /* LiveHanleJsonModel.swift */,
 				E07BAE7A255E372000DE5D6C /* SecondVC.swift */,
 				E07BAE83255E372000DE5D6C /* ThirdVC.swift */,
 				E07BAE80255E372000DE5D6C /* FourthVC.swift */,
@@ -587,7 +603,9 @@
 				E067520125651AF6000A2F5C /* EPPageTitleView.swift in Sources */,
 				E06EA405256264A500D78D6D /* FiveVC.swift in Sources */,
 				E06EA406256264A500D78D6D /* CallBackHandles.swift in Sources */,
+				E07BC8952678AF980024816C /* JSONKit.swift in Sources */,
 				E06EA407256264A500D78D6D /* SecondVC.swift in Sources */,
+				E07BC89226789FD10024816C /* liveListModel.swift in Sources */,
 				E06EA408256264A500D78D6D /* LeftViewController.swift in Sources */,
 				E06A5D322563E9070091E95A /* EPCommonClass.swift in Sources */,
 				E067520D25652570000A2F5C /* PageViewVC.swift in Sources */,
@@ -598,12 +616,14 @@
 				E06EA40B256264A500D78D6D /* SingleManager.swift in Sources */,
 				E0AEF9C425674FEB006AE9D2 /* LeftVC.swift in Sources */,
 				E06EA40C256264A500D78D6D /* HUD.swift in Sources */,
+				E07BC89E2678BD830024816C /* LiveHanleJsonModel.swift in Sources */,
 				E06EA40D256264A500D78D6D /* UserCell.swift in Sources */,
 				E06EA40E256264A500D78D6D /* EPAPI.swift in Sources */,
 				E06EA40F256264A500D78D6D /* ViewController.swift in Sources */,
 				E06751FC25651AB7000A2F5C /* EPPageView.swift in Sources */,
 				E06EA410256264A500D78D6D /* FirstVC.swift in Sources */,
 				E06EA411256264A500D78D6D /* SUOYIN.swift in Sources */,
+				E07BC89B2678BA800024816C /* CleanJSON.swift in Sources */,
 				E06EA412256264A500D78D6D /* AppDelegate.swift in Sources */,
 				E06EA413256264A500D78D6D /* BaseNavBarViewController.swift in Sources */,
 				E06751ED2564D10D000A2F5C /* EPAlertTool.swift in Sources */,
@@ -637,7 +657,9 @@
 				E067520025651AF6000A2F5C /* EPPageTitleView.swift in Sources */,
 				E07BAE85255E372000DE5D6C /* FiveVC.swift in Sources */,
 				E07BAE71255E365D00DE5D6C /* CallBackHandles.swift in Sources */,
+				E07BC8942678AF980024816C /* JSONKit.swift in Sources */,
 				E07BAE86255E372000DE5D6C /* SecondVC.swift in Sources */,
+				E07BC89126789FD10024816C /* liveListModel.swift in Sources */,
 				E07BAE88255E372000DE5D6C /* LeftViewController.swift in Sources */,
 				E06A5D312563E9070091E95A /* EPCommonClass.swift in Sources */,
 				E067520C25652570000A2F5C /* PageViewVC.swift in Sources */,
@@ -648,12 +670,14 @@
 				E07BAE75255E365D00DE5D6C /* SingleManager.swift in Sources */,
 				E0AEF9C325674FEB006AE9D2 /* LeftVC.swift in Sources */,
 				E06EA3DD25624C9B00D78D6D /* HUD.swift in Sources */,
+				E07BC89D2678BD830024816C /* LiveHanleJsonModel.swift in Sources */,
 				E07BAE89255E372000DE5D6C /* UserCell.swift in Sources */,
 				E06EA3CF25624C1900D78D6D /* EPAPI.swift in Sources */,
 				E07BAE5B255E361000DE5D6C /* ViewController.swift in Sources */,
 				E06751FB25651AB7000A2F5C /* EPPageView.swift in Sources */,
 				E07BAE8A255E372000DE5D6C /* FirstVC.swift in Sources */,
 				E07BAE90255E372000DE5D6C /* SUOYIN.swift in Sources */,
+				E07BC89A2678BA800024816C /* CleanJSON.swift in Sources */,
 				E07BAE57255E361000DE5D6C /* AppDelegate.swift in Sources */,
 				E07BAE73255E365D00DE5D6C /* BaseNavBarViewController.swift in Sources */,
 				E06751EC2564D10D000A2F5C /* EPAlertTool.swift in Sources */,
@@ -702,6 +726,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.7.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.peogoo.DiscipleGroupDG.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -726,6 +751,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

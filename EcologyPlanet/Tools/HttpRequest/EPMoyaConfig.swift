@@ -20,7 +20,7 @@ public extension TargetType {
 
     var headers: [String : String]? {
         
-        return ["Content-Type":"application/json;multipart/form-data","accept":"application/json","token" : "MTg2MTIxMzg2OTE5NzUw"]
+        return ["Content-Type":"application/json;multipart/form-data","accept":"application/json","token" : "MTk4MDExNzA1Mjc0MDYw","version":"v2.7.0"]
     }
 
     var sampleData: Data {

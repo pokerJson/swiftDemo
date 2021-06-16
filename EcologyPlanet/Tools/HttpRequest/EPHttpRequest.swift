@@ -17,17 +17,19 @@ public class HttpRequest {
     ///   - error: 连接服务器成功但是数据获取失败
     ///   - failure: 连接服务器失败
    
-    public class func requestCodable<T: TargetType, D: Decodable>(target: T, model: D.Type?, cache: ((D?) -> Void)? = nil, success: @escaping((D?) -> Void), failure: ((Int?, String) ->Void)?) {
+    public class func requestCodable<T: TargetType>(target: T, cache: ((Data?) -> Void)? = nil, success: @escaping((Data?) -> Void), failure: ((Int?, String) ->Void)?) {
        
         let provider = MoyaProvider<T>(plugins: [RequestHandlingPlugin()])
         provider.request(target) { result in
             ProgressHUD.hide()
             switch result {
             case let .success(response):
-                let model = try? response.map(D.self)
+//                let model = try? response.map(D.self)
                 let dict = try? JSONSerialization.jsonObject(with: response.data, options: .mutableContainers) as? Dictionary<String, Any>
                 if dict?["code"] as! Int == 0 {
-                    success(model)
+//                    success(response.data.toModel(modelType: D.self))
+                
+                    success(response.data)
                 }
             case let .failure(error):
                 let statusCode = error.response?.statusCode ?? 0
@@ -59,6 +61,84 @@ public class HttpRequest {
                 let dict = try? JSONSerialization.jsonObject(with: response.data, options: .mutableContainers) as? Dictionary<String, Any>
                 if dict?["code"] as! Int == 0 {
                     success(response.data)
+                }
+            case let .failure(error):
+                let statusCode = error.response?.statusCode ?? 0
+                let errorCode = "请求出错，错误码：" + String(statusCode)
+                failureHandle(failure: failure, stateCode: statusCode, message: error.errorDescription ?? errorCode)
+            }
+        }
+        
+        //错误处理 - 弹出错误信息
+        func failureHandle(failure: ((Int?, String) ->Void)? , stateCode: Int?, message: String) {
+            Alert.show(type: .error, text: message)
+            failure?(stateCode ,message)
+        }
+        
+    }
+    
+    //MARK:基于第三方的HandJson 直接返回model
+    /// 基于第三方的HandJson 直接返回model
+    /// - Parameters:
+    ///   - target: 接口
+    ///   - model: 返回的model
+    ///   - success: 成功
+    ///   - failure: 失败
+    public class func requestHandyJson2222<T: TargetType,D: HandyJSON>(target: T,model:D.Type, success: @escaping((_ object: D?) ->Void), failure: ((Int?, String) ->Void)?) {
+        let provider = MoyaProvider<T>(plugins: [
+            RequestHandlingPlugin()
+            ])
+        
+        provider.request(target) { result in
+            ProgressHUD.hide()
+            switch result {
+            case let .success(response):
+                let dict = try? JSONSerialization.jsonObject(with: response.data, options: .mutableContainers) as? Dictionary<String, Any>
+                if dict?["code"] as! Int == 0 {
+//                    success(response.data)
+                    success(D.deserialize(from: String(data: response.data, encoding: .utf8)))
+                }
+            case let .failure(error):
+                let statusCode = error.response?.statusCode ?? 0
+                let errorCode = "请求出错，错误码：" + String(statusCode)
+                failureHandle(failure: failure, stateCode: statusCode, message: error.errorDescription ?? errorCode)
+            }
+        }
+        
+        //错误处理 - 弹出错误信息
+        func failureHandle(failure: ((Int?, String) ->Void)? , stateCode: Int?, message: String) {
+            Alert.show(type: .error, text: message)
+            failure?(stateCode ,message)
+        }
+        
+    }
+    
+    //MARK:基于系统的codable 直接返回model
+    /// 基于系统codable 实现的网络请求，直接返回model
+    /// - Parameters:
+    ///   - target: 接口地址
+    ///   - model: 传进来的model
+    ///   - success: 成功回调
+    ///   - failure: 失败
+    public class func requestCodeable222<T: TargetType,D: Codable>(target: T, model:D.Type,success: @escaping((_ object: D) ->Void), failure: ((Int?, String) ->Void)?) {
+    
+       
+        
+        let provider = MoyaProvider<T>(plugins: [
+            RequestHandlingPlugin()
+            ])
+        
+        provider.request(target) { result in
+            ProgressHUD.hide()
+            switch result {
+            case let .success(response):
+                let dict = try? JSONSerialization.jsonObject(with: response.data, options: .mutableContainers) as? Dictionary<String, Any>
+                if dict?["code"] as! Int == 0 {
+                    do {
+                        success(try JSONDecoder().decode(D.self, from: response.data))
+                    } catch {
+                        print(error.localizedDescription)
+                    }
                 }
             case let .failure(error):
                 let statusCode = error.response?.statusCode ?? 0

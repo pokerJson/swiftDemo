@@ -9,6 +9,7 @@ enum  EPAPI {
     //
     case rankList(Int, Int, Int)
     case upLoadImage(img:UIImage)
+    case liveState(Int,Int,Int)
 
 }
 
@@ -20,6 +21,7 @@ extension EPAPI: TargetType {
         switch self {
         case .rankList: return "/liveInfo/liveInfoList"
         case .upLoadImage: return "/oss/putObject"
+        case .liveState: return "/liveInfo/liveInfoList"
         }
     }
 
@@ -50,6 +52,11 @@ extension EPAPI: TargetType {
             let imageData = img.pngData() ?? Data()
             let imageMultipartFormData = MultipartFormData(provider: .data(imageData), name: "file", fileName: "file.png", mimeType: "image/png")
             return .uploadMultipart([imageMultipartFormData])
+            
+        case .liveState(let a, let b, let c):
+            params = ["pageSize":a,"pageNo":b,"loginType":c]
+            return .requestParameters(parameters: params, encoding: Alamofire.JSONEncoding() as ParameterEncoding )
+
         }
     }
 
