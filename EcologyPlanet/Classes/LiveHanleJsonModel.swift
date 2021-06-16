@@ -6,9 +6,10 @@
 //
 
 import HandyJSON
-struct Hasfdfasd: HandyJSON {
+//T泛型 Hasfdfasd是服务器返回的固定参数 其中data字段是根据具体业务返回的 这里用泛型传递 外面用Hasfdfasd<yyyy>
+struct Hasfdfasd<T: HandyJSON>: HandyJSON {
     var msg: String?
-    var data: yyyy?
+    var data: T?
     var code: Int?
 
 }

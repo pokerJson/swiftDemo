@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HandyJSON
 
 class FirstVC: BaseViewController {
 
@@ -74,14 +75,21 @@ class FirstVC: BaseViewController {
 //        } failure: { (_, _) in
 //
 //        }
+        
+        
+        //方法一：拿到data数据在外面直接handlejson转具体的model
         HttpRequest.requestHandyJson(target: EPAPI.rankList(10, 1, 1)) { (data) in
-            let model = Hasfdfasd.deserialize(from: String(data: data, encoding: .utf8))
+//            let model = Hasfdfasd.deserialize(from: String(data: data, encoding: .utf8))
+            let model = JSONDeserializer<Hasfdfasd<yyyy>>.deserializeFrom(json: String(data: data, encoding: .utf8))
+            
             print(model?.data?.list?.first?.liveId)
 
         } failure: { (_, _) in
 
         }
-        HttpRequest.requestHandyJson2222(target: EPAPI.rankList(10, 1, 1), model: Hasfdfasd.self) {[weak self] model in
+        
+        //方法二：把model传进去 返回具体mode
+        HttpRequest.requestHandyJson2222(target: EPAPI.rankList(10, 1, 1), model: Hasfdfasd<yyyy>.self) {[weak self] model in
             guard let self =  self else {return}
             print(model?.data?.list?.first?.liveId)
 
@@ -90,18 +98,18 @@ class FirstVC: BaseViewController {
         }
 
 
-
+        //方法三：拿到data数据在外面直接基于系统的codable 转具体的model
         HttpRequest.requestCodable(target: EPAPI.rankList(10, 1, 1)) { [weak self] model in
             guard let self =  self else {return}
-            let model22 = model?.toModel(modelType: LiveListModel.self)
+            let model22 = model?.toModel(modelType: LiveListModel<xxxxx>.self)
             
             print(model22!.data.list.first?.liveId)
         } failure: { code, msg in
             
         }
 
-    
-        HttpRequest.requestCodeable222(target: EPAPI.rankList(10, 1, 1), model: LiveListModel.self) {[weak self] model in
+        //方法四：把model传进去 返回具体mode
+        HttpRequest.requestCodeable222(target: EPAPI.rankList(10, 1, 1), model: LiveListModel<xxxxx>.self) {[weak self] model in
             guard let self =  self else {return}
             self.list = model.data.list
             print(self.list.first?.liveId ?? "")

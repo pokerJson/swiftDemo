@@ -5,10 +5,11 @@
 //  Created by dzc on 2021/6/15.
 //
 
+//T泛型 LiveListModel是服务器返回的固定参数 其中data字段是根据具体业务返回的 这里用泛型传递 外面用LiveListModel<xxxxx>
 
-struct LiveListModel: MapCodable {
+struct LiveListModel<T :Codable>: MapCodable {
     var msg: String
-    var data: xxxxx
+    var data: T
     var code: Int
 
 }
